@@ -1,0 +1,135 @@
+body {
+  font-size: 16px;
+}
+h2,
+h3 {
+  text-transform: uppercase;
+  font-weight: 100;
+}
+h3 {
+  font-size: 1.4em;
+}
+
+.content {
+  border-bottom: 1px solid black;
+  border-collapse: collapse;
+}
+table {
+  table-layout: fixed;
+  border-left: 1px solid black;
+  border-collapse: collapse;
+
+  width: 800px;
+}
+th {
+  border: 1px solid black;
+  border-right: none;
+  border-bottom: none;
+  text-align: start;
+  padding: 9px 20px 5px;
+  font-weight: 100;
+}
+th.title,
+.table-text th {
+  border: none;
+}
+.table-text th {
+  padding-right: 0;
+  text-align: justify;
+}
+.title h2 {
+  font-size: 2.4em;
+  font-weight: 600;
+}
+.cellheader {
+  padding: 30px 40px;
+  width: 30%;
+}
+input,
+textarea {
+  padding: 0;
+  background-color: initial;
+  border: none;
+  width: 100%;
+  font-size: 0.7em;
+  font-family: inherit;
+}
+textarea:focus,
+input:focus {
+  outline: none;
+}
+textarea {
+  height: 100px;
+}
+.input-names input {
+  width: 50%;
+}
+.cell-button {
+  height: 150px;
+}
+.cell-button button {
+  background-color: initial;
+  border: 1px solid black;
+  padding: 8px 35px;
+  font-family: inherit;
+  text-transform: uppercase;
+  font-size: 0.7em;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.cell-button--center {
+  width: 100%;
+  margin: 0 auto;
+}
+.inquiry-title {
+  transform: rotate(-90deg);
+
+  position: absolute;
+  top: 550px;
+  left: -530px;
+
+  font-size: 140px;
+  font-weight: 100;
+}
+
+.flex-right {
+  display: flex;
+  justify-content: right;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+/* xs */
+@media (max-width: 575.98px) {
+  body {
+    font-size: 13px;
+  }
+}
+
+/* sm */
+@media (max-width: 767.98px) {
+}
+
+/* md */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body {
+    font-size: 13px;
+  }
+}
+
+/* lg */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* xl */
+@media (min-width: 1200px) and (max-width: 1489.98px) {
+}
+
+@media (min-width: 1490px) {
+}
