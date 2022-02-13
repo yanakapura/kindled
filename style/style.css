@@ -31,6 +31,11 @@ a {
   color: inherit;
 }
 
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
 .first-section {
   height: 800px;
   background: transparent;
@@ -549,7 +554,7 @@ a {
     height: fit-content;
     font-size: 1.1em;
   }
-  .subscribe-grid {
+  .main-section .subscribe-grid {
     grid-gap: 30px;
     grid-template-columns: 1fr 1fr;
   }

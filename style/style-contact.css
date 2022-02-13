@@ -9,7 +9,14 @@ h3 {
 h3 {
   font-size: 1.4em;
 }
-
+p {
+  padding: 0;
+  margin: 0;
+}
+.header {
+  border-bottom: 2px solid black;
+  height: auto;
+}
 .content {
   border-bottom: 1px solid black;
   border-collapse: collapse;
@@ -37,6 +44,9 @@ th.title,
   padding-right: 0;
   text-align: justify;
 }
+.table-text .cellheader p {
+  width: 35%;
+}
 .title h2 {
   font-size: 2.4em;
   font-weight: 600;
@@ -54,10 +64,7 @@ textarea {
   font-size: 0.7em;
   font-family: inherit;
 }
-textarea:focus,
-input:focus {
-  outline: none;
-}
+
 textarea {
   height: 100px;
   resize: none;
@@ -102,16 +109,71 @@ textarea {
   display: flex;
   justify-content: center;
 }
+.email {
+  display: none;
+}
+.subscribe-grid {
+  grid-template-columns: 5fr 1fr 1fr;
+}
 
 /* xs */
 @media (max-width: 575.98px) {
   body {
     font-size: 13px;
   }
+  .header {
+    padding: 0;
+  }
+  .site-title {
+    max-width: 70%;
+  }
 }
 
 /* sm */
 @media (max-width: 767.98px) {
+  table {
+    width: 100%;
+    border-left: 0;
+  }
+  .th-empty,
+  .cellheader,
+  .cell-button {
+    border-left: 0;
+  }
+  .th-empty {
+    padding: 0;
+  }
+  .inquiry-title {
+    display: none;
+  }
+  .table-title .title,
+  .table-text .cellheader {
+    font-size: inherit;
+    white-space: normal;
+  }
+  .cellheader {
+    width: 0.1%;
+    padding: 20px 0 20px 20px;
+    margin-left: 20px;
+    white-space: nowrap;
+    font-size: 18px;
+  }
+  .cellheader h3 {
+    font-weight: 600;
+    color: #2c2c2c;
+  }
+  .cellheader ~ th {
+    border-left: none;
+  }
+  .table-text .cellheader {
+    padding: 20px;
+  }
+  .table-text .cellheader p {
+    width: 70%;
+  }
+  .cell-button {
+    transform: translateX(-1%);
+  }
 }
 
 /* md */
@@ -119,12 +181,29 @@ textarea {
   body {
     font-size: 13px;
   }
+  table {
+    width: 615px;
+  }
+  .cellheader {
+    width: 22%;
+  }
+  .inquiry-title {
+    letter-spacing: 3px;
+    top: 530px;
+    left: -470px;
+    font-size: 120px;
+  }
 }
 
 /* lg */
 @media (min-width: 992px) and (max-width: 1199.98px) {
   body {
     font-size: 14px;
+  }
+  .inquiry-title {
+    top: 530px;
+    left: -490px;
+    font-size: 130px;
   }
 }
 

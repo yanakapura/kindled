@@ -11,7 +11,7 @@ var lastScrollTop = 0;
 $(window).scroll(function (event) {
   if ($(window).width() > 768) {
     var st = $(this).scrollTop();
-    console.log(st);
+    // console.log(st);
     if (st >= lastScrollTop) {
       $(".menu").slideUp();
     } else {
