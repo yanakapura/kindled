@@ -34,21 +34,11 @@ a {
 .first-section {
   height: 800px;
   background: transparent;
-  /* background: no-repeat center/100% url(/images/img1.jpg); */
 }
 
 .header {
   z-index: -1;
-  /* margin: 0 auto;
-  color: rgb(255, 255, 255);
-  text-transform: uppercase;
-  font-size: 45px; */
-
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  /* background: #555 url(/images/img1.jpg) center no-repeat; */
-  background: no-repeat center/100% url(/images/img1.jpg);
+  background: no-repeat center/100% url(/images/img6.jpg);
   height: 800px;
   position: fixed;
   width: 100%;
@@ -64,17 +54,11 @@ a {
   width: 100%;
 
   position: relative;
-  /* top: 70px; */
 }
 
 .menu {
-  /* display: flex;
-  margin: 60px;
-  width: 700px;
-  justify-content: space-around;
-  position: absolute; */
-
-  /* display: flex; */
+  display: flex;
+  z-index: 1;
   margin: 60px;
   width: 100%;
   text-align: center;
@@ -91,12 +75,102 @@ a {
   /* background-color: rgba(0, 0, 0, 0.308); */
   height: 70px;
 }
+.menu-flex {
+  display: flex;
+  justify-content: space-between;
+
+  width: 50%;
+  margin: 8px auto;
+}
 
 .main-section {
   width: 100%;
   height: auto;
   background-color: inherit;
+  position: relative;
 }
+
+.button-div {
+  position: absolute;
+  top: -5%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.start-progect--button {
+  background-color: transparent;
+  font-size: 1em;
+  font-family: inherit;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  padding: 8px 45px;
+  border: none;
+  color: white;
+  text-align: center;
+  transform: translate(0%, 0%);
+  overflow: hidden;
+}
+.start-progect--button span {
+  display: block;
+  background: rgb(255, 255, 255);
+  transition: ease-in-out 0.2s;
+}
+
+/* ////////////////////////////////////////////////// */
+/* BUTTON ANIMATION */
+/* ////////////////////////////////////////////////// */
+.start-progect--button span:nth-child(1),
+.start-progect--button span:nth-child(3) {
+  position: absolute;
+  height: 1px;
+  width: 100%;
+}
+.start-progect--button span:nth-child(2),
+.start-progect--button span:nth-child(4) {
+  position: absolute;
+  height: 100%;
+  width: 1px;
+}
+
+.start-progect--button:hover span:nth-child(1) {
+  top: 0;
+  left: 100%;
+  transition-delay: 0s;
+}
+.start-progect--button:hover span:nth-child(2) {
+  top: 100%;
+  right: 0;
+  transition-delay: 0.2s;
+}
+.start-progect--button:hover span:nth-child(3) {
+  bottom: 0;
+  right: 100%;
+  transition-delay: 0.4s;
+}
+.start-progect--button:hover span:nth-child(4) {
+  bottom: 100%;
+  left: 0;
+  transition-delay: 0.6s;
+}
+
+.start-progect--button span:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+.start-progect--button span:nth-child(2) {
+  top: 0;
+  right: 0;
+}
+.start-progect--button span:nth-child(3) {
+  bottom: 0;
+  right: 0;
+}
+.start-progect--button span:nth-child(4) {
+  bottom: 0;
+  left: 0;
+}
+/* ////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////// */
 
 .row {
   padding: 50px;
@@ -122,7 +196,6 @@ a {
 
 .subscribe {
   height: 100px;
-  /* width: 100%; */
   border-bottom: 0.8px solid black;
 }
 
@@ -178,7 +251,6 @@ a {
   background-repeat: no-repeat;
 }
 
-/* .grid-section-3 { */
 .grid-center {
   display: grid;
   align-content: center;
@@ -417,10 +489,21 @@ a {
   .black {
     display: none;
   }
+  .menu {
+    position: relative;
+    display: none;
+  }
   .first-section {
     height: 150px;
     background: none;
     border-bottom: 1px solid black;
+  }
+  .header {
+    position: relative;
+    height: 150px;
+    background-image: none;
+    width: auto;
+    /* display: none; */
   }
   .grid-section,
   .subscribe-grid {
@@ -488,7 +571,7 @@ a {
   }
   .menu {
     font-size: 30px;
-    width: 500px;
+    height: 52px;
   }
   .first-section,
   .header {
