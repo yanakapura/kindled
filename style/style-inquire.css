@@ -60,6 +60,7 @@ input:focus {
 }
 textarea {
   height: 100px;
+  resize: none;
 }
 .input-names input {
   width: 50%;
