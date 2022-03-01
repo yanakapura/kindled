@@ -121,7 +121,7 @@ textarea {
   body {
     font-size: 13px;
   }
-  .header {
+  #header {
     padding: 0;
   }
   .site-title {
@@ -134,6 +134,9 @@ textarea {
   table {
     width: 100%;
     border-left: 0;
+  }
+  .header {
+    padding: 40px 20px;
   }
   .th-empty,
   .cellheader,
@@ -173,6 +176,10 @@ textarea {
   }
   .cell-button {
     transform: translateX(-1%);
+  }
+  input,
+  textarea {
+    font-size: 0.85em;
   }
 }
 

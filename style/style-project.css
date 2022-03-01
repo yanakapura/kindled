@@ -1,0 +1,330 @@
+.main-section h1,
+.main-section h2,
+.main-section h3,
+.main-section h4 {
+  font-weight: 100;
+}
+
+.main-section h1,
+.main-section h2 {
+  font-size: 2em;
+  text-transform: uppercase;
+  text-align: start;
+  max-width: 300px;
+}
+
+.main-section h3 {
+  font-size: 1em;
+}
+
+.main-section h4 {
+  font-size: 0.8em;
+  font-style: italic;
+  margin: 30px 0;
+}
+
+.main-section {
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 800px;
+  height: auto;
+}
+
+.main-section > div {
+  border-bottom: 1px solid black;
+}
+
+.slider-section,
+.image-section--md {
+  max-width: 100%;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+}
+
+.slider-section img,
+.image-section--md img {
+  height: auto;
+  width: 100%;
+}
+
+.progect-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+
+  text-align: justify;
+  border-left: 1px solid black;
+}
+
+.sec-3_image img {
+  margin: auto;
+  height: 400px;
+}
+
+.left {
+  justify-content: end;
+}
+.right {
+  justify-content: start;
+}
+
+.main-section > .image-section--lg {
+  border-bottom: none;
+}
+
+.image-section--md div {
+  height: 600px;
+  width: 400px;
+  overflow: hidden;
+  margin: auto 20px;
+}
+
+.image-section--lg,
+.button-section {
+  grid-column: 1/3;
+  overflow: hidden;
+}
+
+.image-section--lg div {
+  overflow: hidden;
+  height: 100%;
+}
+
+.image-section--lg img {
+  width: 100%;
+  height: auto;
+}
+
+.magazine img {
+  height: 100%;
+  width: auto;
+}
+
+.button-section {
+  height: 100px;
+  border-bottom: 1px solid black;
+}
+
+.button-div {
+  margin: 34px 0;
+  position: relative;
+  top: unset;
+  width: unset;
+}
+.start-progect--button {
+  font-size: 1em;
+  color: black;
+  transform: translate(0%, 0%);
+}
+.start-progect--button span {
+  background: black;
+}
+
+/* Малые девайсы («ландшафтные», >= 575px) */
+@media (max-width: 767.98px) {
+  .main-section {
+    grid-auto-rows: auto;
+  }
+  .slider-section,
+  .progect-section,
+  .sec-3_image,
+  .image-section--lg,
+  .left,
+  .right {
+    grid-column: 1/3;
+  }
+  .progect-section {
+    border-left: 0;
+  }
+  .main-section h1,
+  .main-section h2 {
+    font-size: 3em;
+    max-width: 450px;
+  }
+  .main-section h2 {
+    margin-bottom: 30px;
+  }
+  .main-section h3 {
+    font-size: 2em;
+    letter-spacing: 1.5px;
+    margin-bottom: 80px;
+  }
+  .main-section h4,
+  .main-section p {
+    font-size: 1.5em;
+  }
+  .main-section .sec-3_image {
+    height: 600px;
+    border-bottom: none;
+  }
+  .sec-3_image img {
+    height: 500px;
+  }
+  .main-section .image-section--md {
+    height: 350px;
+  }
+  .main-section .left,
+  .main-section .right {
+    height: 800px;
+    justify-content: center;
+  }
+  .right {
+    grid-row: 9;
+  }
+  .image-section--md div {
+    height: 700px;
+    width: 500px;
+    margin: 0;
+  }
+  .main-section .magazine {
+    grid-row: 11;
+    height: 300px;
+    border-bottom: 1px solid black;
+  }
+  .button-div {
+    display: flex;
+  }
+}
+
+/* Экстрамалые девайсы («портретные телефоны», < 576px) */
+@media (max-width: 575.98px) {
+  .row {
+    padding: 30px;
+  }
+  .main-section h1,
+  .main-section h2 {
+    font-size: 2.8em;
+    max-width: 450px;
+  }
+  .main-section h2 {
+    margin-bottom: 30px;
+  }
+  .main-section h3 {
+    font-size: 1.7em;
+    letter-spacing: 1.5px;
+    margin-bottom: 80px;
+  }
+  .main-section h4,
+  .main-section p {
+    font-size: 1em;
+  }
+  .main-section .sec-3_image {
+    height: 300px;
+    border-bottom: none;
+  }
+  .sec-3_image img {
+    height: 300px;
+  }
+  .main-section .image-section--md {
+    height: 250px;
+  }
+  .main-section .left,
+  .main-section .right {
+    height: 400px;
+  }
+  .image-section--md div {
+    height: 350px;
+    width: 300px;
+  }
+  .main-section .magazine {
+    height: auto;
+  }
+  .main-section .magazine div {
+    height: auto;
+  }
+  .main-section .magazine img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  .main-section .image-section--md img {
+    height: 100%;
+    width: auto;
+  }
+}
+
+/* Средние девайсы («таблетки», >= 768px)  */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .main-section {
+    grid-auto-rows: auto;
+  }
+  .slider-section,
+  .progect-section,
+  .sec-3_image,
+  .image-section--lg,
+  .left,
+  .right {
+    grid-column: 1/3;
+  }
+  .progect-section {
+    border-left: 0;
+  }
+  .main-section h1,
+  .main-section h2 {
+    font-size: 5em;
+    max-width: 500px;
+  }
+  .main-section h2 {
+    margin-bottom: 30px;
+  }
+  .main-section h3 {
+    font-size: 2em;
+    letter-spacing: 1.5px;
+    margin-bottom: 80px;
+  }
+  .main-section h4,
+  .main-section p {
+    font-size: 1.5em;
+  }
+  .main-section .sec-3_image {
+    height: 700px;
+    border-bottom: none;
+  }
+  .sec-3_image img {
+    height: 500px;
+  }
+  .main-section .image-section--md {
+    height: 450px;
+  }
+  .main-section .left,
+  .main-section .right {
+    height: 800px;
+    justify-content: center;
+  }
+  .right {
+    grid-row: 9;
+  }
+  .image-section--md div {
+    height: 750px;
+    width: 500px;
+    margin: 0;
+  }
+  .main-section .magazine {
+    grid-row: 11;
+    height: 400px;
+    border-bottom: 1px solid black;
+  }
+}
+/* Большие девайсы (большие десктопы, >= 992px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .main-section {
+    grid-auto-rows: 600px;
+  }
+  .image-section--md div {
+    height: 500px;
+    width: 340px;
+    margin: 0;
+  }
+}
+
+/* Большие девайсы (большие десктопы, >= 1200px) */
+@media (min-width: 1200px) and (max-width: 1439.98px) {
+  .main-section {
+    grid-auto-rows: 700px;
+  }
+}
+
+@media (min-width: 1440px) {
+}

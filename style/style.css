@@ -5,11 +5,16 @@ html {
   scroll-behavior: smooth;
 }
 
+* {
+  transition: 0.1s ease;
+}
+
 body {
-  background-color: rgb(231, 225, 205);
+  background-color: rgb(223, 218, 202);
   margin: 0;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
+  box-sizing: border-box;
   /* font-family: 'Nunito', sans-serif; */
 }
 
@@ -39,11 +44,12 @@ input:focus {
 .first-section {
   height: 800px;
   background: transparent;
+  z-index: -1;
 }
 
 .header {
   z-index: -1;
-  background: no-repeat center/100% url(/images/img6.jpg);
+  background: no-repeat center/100% url(/portfolio/images/main/img6.jpg);
   height: 800px;
   position: fixed;
   width: 100%;
@@ -250,7 +256,7 @@ input:focus {
 
 .grid-inner_list ul li {
   padding-left: 1.9rem;
-  background-image: url(/images/plus.png);
+  background-image: url(../images/plus.png);
   background-position: 0.3em 0.2em;
   background-size: 0.9rem 0.9rem;
   background-repeat: no-repeat;
@@ -298,6 +304,8 @@ input:focus {
   font-size: 1.5em;
   font-family: "Times New Roman", Times, serif;
   white-space: nowrap;
+  z-index: 2;
+  cursor: pointer;
 }
 
 .site-title h1:first-of-type::after {
@@ -508,7 +516,11 @@ input:focus {
     height: 150px;
     background-image: none;
     width: auto;
+    z-index: 1;
     /* display: none; */
+  }
+  .button-div {
+    display: none;
   }
   .grid-section,
   .subscribe-grid {
