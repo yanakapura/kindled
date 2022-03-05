@@ -7,23 +7,16 @@ html {
 
 * {
   transition: 0.1s ease;
+  padding: 0;
+  margin: 0;
 }
 
 body {
   background-color: rgb(223, 218, 202);
-  margin: 0;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   box-sizing: border-box;
   /* font-family: 'Nunito', sans-serif; */
-}
-
-h1,
-h2,
-h3,
-h4 {
-  margin: 0;
-  padding: 0;
 }
 
 h1 {
@@ -73,8 +66,6 @@ input:focus {
   margin: 60px;
   width: 100%;
   text-align: center;
-  /* justify-content: space-around; */
-  /* position: absolute; */
 
   margin: 0;
   color: rgb(255, 255, 255);
@@ -83,15 +74,46 @@ input:focus {
 
   color: white;
   position: fixed;
-  /* background-color: rgba(0, 0, 0, 0.308); */
   height: 70px;
 }
+
+.menu a {
+  cursor: pointer;
+}
+
 .menu-flex {
   display: flex;
   justify-content: space-between;
 
   width: 50%;
   margin: 8px auto;
+}
+
+.menu-wrapper {
+  font-size: 0.5em;
+  text-align: start;
+  margin-top: 8px;
+  padding: 10px;
+
+  opacity: 0;
+
+  transform: translateY(-100px);
+  transition: 0.3s ease;
+}
+
+.wrapper {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.menu-wrapper ul {
+  list-style-type: "+";
+  margin-left: 10px;
+}
+
+.menu-wrapper li {
+  padding-left: 10px;
+  margin-bottom: 5px;
 }
 
 .main-section {

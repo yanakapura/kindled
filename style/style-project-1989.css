@@ -1,0 +1,232 @@
+.main-section {
+  grid-auto-rows: auto;
+}
+.main-section h1 {
+  max-width: 200px;
+}
+
+.image-section--lg {
+  height: 1000px;
+}
+
+.image-section--lg img {
+  width: auto;
+  height: 100%;
+}
+
+.tube-section {
+  grid-column: 1/3;
+  justify-content: space-evenly;
+  padding: 50px 0;
+}
+
+.tube-section img {
+  height: 100%;
+  width: auto;
+}
+
+.main-section .site-1989 {
+  grid-column: 1/3;
+  border-bottom: none;
+}
+
+.site-1989 img {
+  width: 100%;
+}
+
+.site-1989-main {
+  grid-template-columns: 33% 17% 17% 33%;
+}
+
+.button-down {
+  grid-column: 2/5;
+  height: 550px;
+}
+
+.button-down img {
+  height: 70%;
+  width: auto;
+  position: relative;
+  top: 20%;
+  left: 5%;
+}
+
+.site-1989-image {
+  grid-row: 1/3;
+  overflow: hidden;
+  height: 100%;
+}
+
+.site-1989-image img {
+  width: 100%;
+  height: auto;
+}
+
+.site-1989-featuring,
+.site-1989-sustainability,
+.site-1989-essentials {
+  padding: 25px;
+  border: 1px solid black;
+  border-right: 0;
+}
+
+.site-1989-featuring img {
+  height: 101px;
+  width: auto;
+  margin-top: 5px;
+}
+
+.site-1989-sustainability img {
+  height: 145px;
+  width: auto;
+}
+
+.site-1989-essentials img {
+  height: 130px;
+  width: auto;
+}
+
+/* // Экстрамалые девайсы («портретные телефоны», < 576px) */
+@media (max-width: 575.98px) {
+}
+
+/* // Малые девайсы («ландшафтные», >= 575px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .site-1989-main {
+    height: 380px;
+  }
+  .button-down {
+    height: 270px;
+  }
+  .site-1989-image img {
+    height: 100%;
+    width: auto;
+  }
+  .site-1989-featuring,
+  .site-1989-sustainability,
+  .site-1989-essentials {
+    padding: 10px;
+  }
+  .site-1989-featuring img {
+    height: 41px;
+    margin-top: 3px;
+  }
+
+  .site-1989-sustainability img {
+    height: 60px;
+    width: auto;
+  }
+
+  .site-1989-essentials img {
+    height: 51px;
+    width: auto;
+  }
+}
+
+/* // Средние девайсы («таблетки», >= 768px)  */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .site-1989-main {
+    height: 500px;
+  }
+  .button-down {
+    height: 350px;
+  }
+  .site-1989-image img {
+    height: 100%;
+    width: auto;
+  }
+  .site-1989-featuring,
+  .site-1989-sustainability,
+  .site-1989-essentials {
+    padding: 10px;
+  }
+  .site-1989-featuring img {
+    height: 57px;
+  }
+
+  .site-1989-sustainability img {
+    height: 80px;
+    width: auto;
+  }
+
+  .site-1989-essentials img {
+    height: 71px;
+    width: auto;
+  }
+}
+
+/* // Большие девайсы (большие десктопы, >= 992px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #img2 {
+    width: auto;
+    height: 110%;
+  }
+  .site-1989-main {
+    height: 600px;
+  }
+  .button-down {
+    height: 450px;
+  }
+  .site-1989-image img {
+    height: 100%;
+    width: auto;
+  }
+  .site-1989-featuring,
+  .site-1989-sustainability,
+  .site-1989-essentials {
+    padding: 15px;
+  }
+  .site-1989-featuring img {
+    height: 67px;
+    width: auto;
+    margin-top: 5px;
+  }
+
+  .site-1989-sustainability img {
+    height: 100px;
+    width: auto;
+  }
+
+  .site-1989-essentials img {
+    height: 86px;
+    width: auto;
+  }
+}
+
+/* // Большие девайсы (большие десктопы, >= 1200px) */
+@media (min-width: 1200px) and (max-width: 1439px) {
+  #img2 {
+    width: auto;
+    height: 110%;
+  }
+  .site-1989-main {
+    height: 700px;
+  }
+  .site-1989-image img {
+    height: 100%;
+    width: auto;
+  }
+  .button-down {
+    height: 500px;
+  }
+  .site-1989-featuring,
+  .site-1989-sustainability,
+  .site-1989-essentials {
+    padding: 20px;
+  }
+  .site-1989-featuring img {
+    height: 83px;
+    width: auto;
+    margin-top: 5px;
+  }
+
+  .site-1989-sustainability img {
+    height: 120px;
+    width: auto;
+  }
+
+  .site-1989-essentials img {
+    height: 105px;
+    width: auto;
+  }
+}
