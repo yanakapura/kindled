@@ -12,8 +12,10 @@
 }
 
 .image-section--lg img {
-  width: auto;
-  height: 100%;
+  /* width: auto;
+  height: 100%; */
+  width: 100%;
+  height: auto;
 }
 
 .slider-section {
@@ -76,7 +78,8 @@
 
 .site-1989-featuring,
 .site-1989-sustainability,
-.site-1989-essentials {
+.site-1989-essentials,
+.site-1989-bodycream-essentials {
   padding: 25px;
   border: 1px solid black;
   border-right: 0;
@@ -97,7 +100,8 @@
   width: auto;
 }
 
-.site-1989-essentials img {
+.site-1989-essentials img,
+.site-1989-bodycream-essentials img {
   height: 130px;
   width: auto;
 }
@@ -265,10 +269,35 @@
 
 /* // Средние девайсы («таблетки», >= 768px)  */
 @media (min-width: 768px) and (max-width: 991.98px) {
+  .image-section--lg {
+    height: 550px;
+  }
+  .image-section--lg img {
+    height: 100%;
+    width: auto;
+  }
+  .slider-section,
+  .image-section--md {
+    height: 600px;
+  }
+  .three-section {
+    align-items: center;
+  }
+  .three-section img {
+    height: 400px;
+    width: auto;
+  }
+  .site-1989-main {
+    height: 600px;
+  }
   .site-1989-main {
     height: 500px;
   }
-  .button-down {
+  .image-section--md {
+    grid-column: 1/3;
+  }
+  .button-down,
+  .site-1989-bodycream-description {
     height: 350px;
   }
   .site-1989-image img {
@@ -277,7 +306,8 @@
   }
   .site-1989-featuring,
   .site-1989-sustainability,
-  .site-1989-essentials {
+  .site-1989-essentials,
+  .site-1989-bodycream-essentials {
     padding: 10px;
   }
   .site-1989-featuring img {
@@ -293,6 +323,64 @@
     height: 71px;
     width: auto;
   }
+  .three-section--products {
+    align-items: flex-end;
+  }
+  #product-2 {
+    height: 80%;
+    margin-bottom: 7px;
+  }
+  #product-3 {
+    height: 60%;
+    margin-bottom: 18px;
+  }
+  .marquee pre {
+    font-size: 80px;
+    -webkit-animation: marquee 20s infinite linear;
+    animation: marquee 20s infinite linear;
+  }
+
+  .typography-section img {
+    width: 100%;
+    height: auto;
+  }
+  #typography {
+    height: 140px;
+  }
+  #typography-1989-logo,
+  #slider-section-1989-logo {
+    height: 30px;
+    width: auto;
+    margin: 30px;
+  }
+  #typography-change {
+    height: 70px;
+  }
+
+  .site-1989-bodycream-image img {
+    height: 300px;
+  }
+  .site-1989-bodycream-details {
+    padding: 10px 0;
+    align-items: center;
+  }
+  .site-1989-bodycream-details img {
+    height: 90px;
+  }
+
+  .site-1989-bodycream-image--sm {
+    padding: 15px 0;
+  }
+  .site-1989-bodycream-image--sm img {
+    height: 110px;
+  }
+  .site-1989-bodycream-essentials {
+    display: flex;
+    align-items: center;
+  }
+  .site-1989-bodycream-essentials img {
+    height: 80px;
+  }
 }
 
 /* // Большие девайсы (большие десктопы, >= 992px) */
@@ -301,14 +389,27 @@
     width: auto;
     height: 110%;
   }
+  .image-section--lg {
+    height: 700px;
+  }
+  .image-section--lg img {
+    height: 100%;
+    width: auto;
+  }
+  .slider-section,
+  .image-section--md {
+    height: 600px;
+  }
+
   .three-section img {
-    height: 650px;
+    height: 600px;
     width: auto;
   }
   .site-1989-main {
     height: 600px;
   }
-  .button-down {
+  .button-down,
+  .site-1989-bodycream-description {
     height: 450px;
   }
   .site-1989-image img {
@@ -317,7 +418,8 @@
   }
   .site-1989-featuring,
   .site-1989-sustainability,
-  .site-1989-essentials {
+  .site-1989-essentials,
+  .site-1989-bodycream-essentials {
     padding: 15px;
   }
   .site-1989-featuring img {
@@ -331,9 +433,46 @@
     width: auto;
   }
 
-  .site-1989-essentials img {
+  .site-1989-essentials img,
+  .site-1989-bodycream-essentials img {
     height: 86px;
     width: auto;
+  }
+  .marquee pre {
+    font-size: 100px;
+  }
+  #product-2 {
+    height: 80%;
+    margin-bottom: 13px;
+  }
+  #product-3 {
+    height: 60%;
+    margin-bottom: 28px;
+  }
+  .typography-section img {
+    width: 100%;
+    height: auto;
+  }
+  .site-1989-bodycream-image img {
+    height: 400px;
+  }
+  .site-1989-bodycream-details,
+  .site-1989-bodycream-image--sm {
+    padding: 20px 0;
+  }
+  .site-1989-bodycream-details img {
+    height: 110px;
+  }
+
+  .site-1989-bodycream-image--sm img {
+    height: 110px;
+  }
+  .site-1989-bodycream-essentials {
+    display: flex;
+    align-items: center;
+  }
+  .site-1989-bodycream-essentials img {
+    height: 100px;
   }
 }
 
@@ -359,7 +498,8 @@
   }
   .site-1989-featuring,
   .site-1989-sustainability,
-  .site-1989-essentials {
+  .site-1989-essentials,
+  .site-1989-bodycream-essentials {
     padding: 20px;
   }
   .site-1989-featuring img {
@@ -373,15 +513,32 @@
     width: auto;
   }
 
-  .site-1989-essentials img {
+  .site-1989-essentials img,
+  .site-1989-bodycream-essentials img {
     height: 105px;
     width: auto;
   }
+  #product-2 {
+    height: 80%;
+    margin-bottom: 13px;
+  }
+  #product-3 {
+    height: 60%;
+    margin-bottom: 33px;
+  }
+  .site-1989-bodycream-essentials {
+    display: flex;
+    align-items: flex-start;
+  }
+  .site-1989-bodycream-essentials img {
+    margin-top: 8px;
+    height: 120px;
+  }
 }
-
+/* 
 @media (min-width: 1440px) {
   .image-section--lg img {
     width: 100%;
     height: auto;
   }
-}
+} */
