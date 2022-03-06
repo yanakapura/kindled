@@ -108,6 +108,7 @@ textarea {
 .flex-center {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .email {
   display: none;
