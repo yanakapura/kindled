@@ -114,6 +114,9 @@
   height: 60%;
   margin-bottom: 40px;
 }
+.site-1989--sm {
+  display: none;
+}
 
 .three-section--products {
   background-color: #fbfbfb;
@@ -230,40 +233,143 @@
   height: 150px;
 }
 
-/* // Экстрамалые девайсы («портретные телефоны», < 576px) */
-@media (max-width: 575.98px) {
-}
-
-/* // Малые девайсы («ландшафтные», >= 575px) */
-@media (min-width: 576px) and (max-width: 767.98px) {
-  .site-1989-main {
-    height: 380px;
+@media (max-width: 375px) {
+  .main-section .slider-section {
+    height: 300px;
   }
-  .button-down {
-    height: 270px;
+  .main-section h1,
+  .main-section h2 {
+    font-size: 1.9em;
   }
-  .site-1989-image img {
+  .main-section .image-section--md img {
+    height: auto;
+    width: 100%;
+  }
+  .main-section .three-section {
+    height: 170px;
+    align-items: center;
+    padding: 10px;
+  }
+  .main-section .three-section img {
+    height: 160px;
+    width: auto;
+  }
+  .main-section .three-section--products {
+    align-items: flex-end;
+    height: 150px;
+  }
+  .main-section .three-section--products img {
     height: 100%;
     width: auto;
   }
-  .site-1989-featuring,
-  .site-1989-sustainability,
-  .site-1989-essentials {
-    padding: 10px;
+  #product-2 {
+    height: 80%;
+    margin-bottom: 7px;
   }
-  .site-1989-featuring img {
-    height: 41px;
-    margin-top: 3px;
+  #product-3 {
+    height: 60%;
+    margin-bottom: 18px;
   }
-
-  .site-1989-sustainability img {
-    height: 60px;
+  .main-section .typography-section {
+    height: 180px;
+  }
+  .marquee pre {
+    font-size: 40px;
+    -webkit-animation: marquee 22s infinite linear;
+    animation: marquee 22s infinite linear;
+  }
+}
+/* // Экстрамалые девайсы («портретные телефоны», < 576px) */
+@media (max-width: 575.98px) {
+  .slider-section {
+    height: 400px;
+  }
+  .three-section img {
+    height: 100%;
     width: auto;
   }
-
-  .site-1989-essentials img {
-    height: 51px;
+  .typography-section {
+    height: 250px;
+  }
+  #typography {
+    height: 70px;
+  }
+  #typography-1989-logo,
+  #slider-section-1989-logo {
+    height: 15px;
     width: auto;
+    margin: 15px;
+  }
+  #typography-change {
+    height: 30px;
+  }
+  #product-2 {
+    margin-bottom: 5px;
+  }
+  #product-3 {
+    margin-bottom: 12px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .slider-section {
+    height: 700px;
+  }
+  .three-section img {
+    height: 100%;
+    width: auto;
+  }
+  .typography-section {
+    height: 400px;
+  }
+  #typography {
+    height: 90px;
+  }
+  #typography-1989-logo,
+  #slider-section-1989-logo {
+    height: 20px;
+    width: auto;
+    margin: 20px;
+  }
+  #typography-change {
+    height: 50px;
+  }
+  #product-2 {
+    margin-bottom: 7px;
+  }
+  #product-3 {
+    margin-bottom: 18px;
+  }
+  .marquee pre {
+    font-size: 60px;
+    -webkit-animation: marquee 20s infinite linear;
+    animation: marquee 20s infinite linear;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .image-section--md {
+    grid-column: 1/3;
+  }
+  .three-section {
+    padding: 30px;
+  }
+
+  .site-1989--sm {
+    grid-column: 1/3;
+    display: block;
+    height: auto;
+  }
+  .site-1989--sm img {
+    height: auto;
+    width: 100%;
+  }
+  .typography-section img {
+    width: 100%;
+    height: auto;
+  }
+  .site-1989 {
+    display: none;
   }
 }
 
