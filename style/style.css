@@ -66,6 +66,10 @@ input:focus {
   position: relative;
 }
 
+.display-block {
+  display: block;
+}
+
 .menu {
   display: flex;
   z-index: 1;
@@ -113,13 +117,17 @@ input:focus {
 }
 
 .menu-wrapper ul {
-  list-style-type: "+";
+  list-style-type: ".";
   margin-left: 10px;
 }
 
 .menu-wrapper li {
   padding-left: 10px;
   margin-bottom: 5px;
+}
+
+.menu-sm {
+  display: none;
 }
 
 .main-section {
@@ -459,12 +467,16 @@ input:focus {
   .first-section .header {
     padding: 0;
   }
+
   .site-title h1:first-of-type::after {
     display: none;
   }
   .site-title p,
   .email h4 {
     white-space: initial;
+  }
+  .site-title p {
+    max-width: 220px;
   }
   .main-section .grid {
     display: block;
@@ -534,6 +546,10 @@ input:focus {
     position: relative;
     display: none;
   }
+  .menu-sm {
+    display: block;
+  }
+
   .first-section {
     height: 150px;
     background: none;
